@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/machine_name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Snap Button"
+        style="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/machine_count_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="end"
+        android:text="10"
+        style="@style/TextAppearance.MaterialComponents.Headline6" />
+</LinearLayout>

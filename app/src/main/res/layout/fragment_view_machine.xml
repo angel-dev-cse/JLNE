@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ViewMachineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Machine Information" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_700" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:columnCount="3">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/name_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brand_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/brand_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/model_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/model_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Model Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/serial_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/serial_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Serial Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/owner_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/owner_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Owner Goes Here"
+                        android:textStyle="bold" />
+
+
+                </GridLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Challan Information" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_700" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:columnCount="3">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/challan_no_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/challan_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Challan Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/date_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_hint_text" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/type_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sent_from_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/sent_from_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent From Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sent_to_text" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/sent_to_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent To Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/amount_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remarks_ET_hint" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/remarks_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks Goes Here"
+                        android:textStyle="bold" />
+                </GridLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transportation History" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/md_grey_700" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No."
+                        android:textStyle="bold"
+                        android:layout_weight="4" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sent From"
+                        android:textStyle="bold"
+                        android:layout_weight="3" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sent To"
+                        android:textStyle="bold"
+                        android:layout_weight="3" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textStyle="bold"
+                        android:layout_weight="3" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/transportation_RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

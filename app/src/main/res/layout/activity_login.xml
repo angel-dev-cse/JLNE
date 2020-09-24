@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".LoginActivity">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_header_text"
+        android:textSize="40sp"
+        android:textColor="@color/md_black_1000" />
+
+    <EditText
+        android:id="@+id/username_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="@string/username_ET_hint"
+        android:inputType="textPersonName"
+        android:autofillHints="username"/>
+
+    <EditText
+        android:id="@+id/password_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="@string/password_ET_hint"
+        android:inputType="textPassword"
+        android:autofillHints="password"/>
+
+    <Button
+        android:id="@+id/login_BT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_BT_text"
+        android:layout_margin="10dp"
+        android:onClick="login"/>
+
+    <Button
+        android:id="@+id/go_register_BT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_register_BT_text"
+        android:layout_margin="10dp"
+        android:onClick="goRegister"/>
+
+    <ProgressBar
+        android:id="@+id/login_PB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

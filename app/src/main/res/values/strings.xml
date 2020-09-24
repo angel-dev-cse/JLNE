@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">JLNE</string>
+    <string name="login_header_text">Login</string>
+    <string name="username_ET_hint">Username</string>
+    <string name="password_ET_hint">Password</string>
+    <string name="login_BT_text">Login</string>
+    <string name="register_header_text">Register</string>
+    <string name="register_BT_text">Register</string>
+    <string name="go_register_BT_text">Create an account</string>
+    <string name="go_login_BT_text">Have an account? Log in!</string>
+    <string name="category_TV_text">Category</string>
+
+    <!-- Default Categories -->
+    <string name="companies">Companies</string>
+    <string name="second_party">Second Party</string>
+    <string name="accounts">Accounts</string>
+    <string-array name="default_categories">
+        <item>@string/companies</item>
+        <item>@string/second_party</item>
+        <item>@string/accounts</item>
+    </string-array>
+
+    <!-- Company Names -->
+    <string name="company_crown">Crown Garments Limited</string>
+    <string name="company_modiste">Modiste (CEPZ) Limited</string>
+    <string name="company_multi_safh">Multi Safh Limited</string>
+    <string name="company_padma">Padma Wears Limited</string>
+    <string name="company_thianis">Thianis Garments Limited</string>
+    <string name="company_univogue">Univogue Garments Limited</string>
+    <string-array name="companies">
+        <item>@string/company_crown</item>
+        <item>@string/company_modiste</item>
+        <item>@string/company_multi_safh</item>
+        <item>@string/company_padma</item>
+        <item>@string/company_thianis</item>
+        <item>@string/company_univogue</item>
+    </string-array>
+
+    <!-- Second Prites -->
+    <string name="party_alif">Alif Enterprise Limited</string>
+    <string name="party_ziaul">Ziaul Huq Machinery</string>
+    <string-array name="parties">
+        <item>@string/party_alif</item>
+        <item>@string/party_ziaul</item>
+    </string-array>
+
+    <!-- Organization types -->
+    <string name="type_company">Company</string>
+    <string name="type_party">Party</string>
+    <string-array name="organization_types">
+        <item>@string/type_company</item>
+        <item>@string/type_party</item>
+    </string-array>
+
+    <!-- Company menu -->
+    <string name="company_machine">Machines</string>
+    <string name="company_accounts">Accounts</string>
+    <string-array name="company_menu">
+        <item>@string/company_machine</item>
+        <item>@string/company_accounts</item>
+    </string-array>
+
+    <!-- Party menu -->
+    <string name="party_given_machine">Given Rent Machines</string>
+    <string name="party_taken_machine">Taken Rent Machines</string>
+    <string name="party_accounts">Accounts</string>
+    <string-array name="party_menu">
+        <item>@string/party_given_machine</item>
+        <item>@string/party_taken_machine</item>
+        <item>@string/party_accounts</item>
+    </string-array>
+
+    <string name="name_ET_hint">Name</string>
+    <string name="address_ET_hint">Address</string>
+    <string name="contact_ET_hint">Contact Information</string>
+    <string name="remarks_ET_hint">Remarks</string>
+    <string name="add_BT_text">Add</string>
+    <string name="add_organization_header_text">Add Organization</string>
+    <string name="add_machine_header_text">Add Machine</string>
+    <string name="brand_ET_hint">Brand</string>
+    <string name="model_ET_hint">Model</string>
+    <string name="serial_ET_hint">Serial</string>
+    <string name="sent_from_ET_hint">Sent From</string>
+    <string name="sent_to_ET_hint">Sent To / Current Location</string>
+    <string name="date_ET_hint">Date</string>
+    <string name="transaction_type_ET_hint">Rent / Sale</string>
+    <string name="challan_no_ET_hint">Challan No.</string>
+    <string name="amount_ET_hint">Rent Amount</string>
+    <string name="rent_radio_text">Rent</string>
+    <string name="sale_radio_text">Sale</string>
+    <string name="transaction_type_hint">Purpose</string>
+    <string name="set_date_BT_text">Set A Date</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">App drawer opened</string>
+    <string name="drawer_close">App drawer closed</string>
+    <string name="organization_name_demo_text">Organization Name here</string>
+    <string name="machine_nav_text">MACHINE</string>
+    <string name="user_nav_text">USER</string>
+    <string name="settings_nav_text">Settings</string>
+    <string name="log_out_nav_text">Log out</string>
+    <string name="organization_type_text">Organization Type</string>
+    <string name="company_radio_text">Company</string>
+    <string name="party_radio_text">Party</string>
+    <string name="organization_type_hint">Organization Type</string>
+    <string name="edit_button_text">Edit</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="organization_list_header_text">Organization Type</string>
+    <string name="close_button_text">Close</string>
+    <string name="expand_arrow_description">Expand Arrow</string>
+    <string name="boolean_true_text">Yes</string>
+    <string name="boolean_false_text">No</string>
+    <string name="update_machine_header_text">Update Machine</string>
+    <string name="update_BT_text">Update</string>
+    <string name="cancel_BT_text">Cancel</string>
+    <string name="location_text">Location</string>
+    <string name="owner_ET_hint">Owner</string>
+    <string name="sent_to_text">Sent To</string>
+    <string name="type_hint_text">Type</string>
+
+</resources>

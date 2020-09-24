@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@color/md_blue_900"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/edit_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/edit_button_text"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:backgroundTint="@color/md_white_1000"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/edit_button_text"
+            android:textColor="@color/md_white_1000"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/delete_button_text"
+            android:src="@drawable/ic_baseline_delete_24"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/delete_button_text"
+            android:textColor="@color/md_white_1000"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/close_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/close_button_text"
+            android:src="@drawable/ic_baseline_close_24" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/close_button_text"
+            android:textColor="@color/md_white_1000"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+    </LinearLayout>
+</LinearLayout>
+

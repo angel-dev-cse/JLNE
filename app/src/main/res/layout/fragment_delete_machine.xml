@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="3.0dip"
+    app:cardCornerRadius="7.0dip"
+    tools:context=".fragment.DeleteMachineFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Want to delete this machine?" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@color/md_grey_200"
+            android:columnCount="3">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brand_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/brand_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brand_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/model_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/model_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/model_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/serial_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/challan_no_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/challan_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/challan_no_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/owner_ET_hint" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/owner_ET_hint" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_text" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/location_TV"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_text" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete_BT"
+                style="@style/DeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/delete_button_text"
+                app:icon="@drawable/ic_baseline_delete_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_BT"
+                style="@style/CancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/cancel_BT_text"
+                app:icon="@drawable/ic_baseline_cancel_24"
+                app:iconTint="@color/md_black_1000" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="You can not undo the Delete action!"
+            android:textColor="@color/md_red_A700" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

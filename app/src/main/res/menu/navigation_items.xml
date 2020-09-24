@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/machine_nav_text">
+        <menu>
+            <item
+                android:id="@+id/add_machines"
+                android:title="@string/add_machine_header_text"
+                android:icon="@drawable/ic_baseline_add_24"/>
+            <item
+                android:id="@+id/add_organizations"
+                android:title="@string/add_organization_header_text"
+                android:icon="@drawable/ic_baseline_add_to_photos_24"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/user_nav_text">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:title="@string/settings_nav_text"
+                android:icon="@drawable/ic_baseline_settings_24" />
+            <item
+                android:id="@+id/log_out"
+                android:title="@string/log_out_nav_text"
+                android:icon="@drawable/ic_baseline_power_settings_new_24" />
+        </menu>
+    </item>
+</menu>

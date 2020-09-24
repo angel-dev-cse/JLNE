@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DeleteButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/md_red_900</item>
+        <item name="strokeColor">@color/md_red_700</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/md_red_400</item>
+    </style>
+
+    <style name="CancelButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/md_grey_300</item>
+        <item name="strokeColor">@color/md_grey_200</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/md_grey_400</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+
+    </style>
+</resources>
