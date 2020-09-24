@@ -1,12 +1,6 @@
 package com.example.jlne.fragment;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +12,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.example.jlne.AddMachineActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.example.jlne.R;
 import com.example.jlne.helper.AsyncTaskHelper;
 import com.example.jlne.helper.URLS;
@@ -37,6 +37,7 @@ import java.util.Objects;
 
 public class AddMachineFragment extends DialogFragment {
     final String TAG = "__AddMachine";
+    private FragmentManager fragmentManager;
     private AutoCompleteTextView nameET, brandET, modelET, ownerET, sentFromET, sentToET;
     private TextInputEditText serialET, challanET, dateET, amountET, remarksET;
     private ProgressBar addPB;
@@ -49,8 +50,7 @@ public class AddMachineFragment extends DialogFragment {
     }
 
     public static AddMachineFragment newInstance() {
-        AddMachineFragment fragment = new AddMachineFragment();
-        return fragment;
+        return new AddMachineFragment();
     }
 
     @Override
@@ -75,7 +75,7 @@ public class AddMachineFragment extends DialogFragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        
+
         nameET = view.findViewById(R.id.name_ET);
         brandET = view.findViewById(R.id.brand_ET);
         modelET = view.findViewById(R.id.model_ET);
@@ -214,12 +214,12 @@ public class AddMachineFragment extends DialogFragment {
         String model = modelET.getText().toString().trim();
         String serial = Objects.requireNonNull(serialET.getText()).toString().trim();
         String owner = ownerET.getText().toString().trim();
-        String sentFrom =  sentFromET.getText().toString().trim();
-        String sentTo =  sentToET.getText().toString().trim();
+        String sentFrom = sentFromET.getText().toString().trim();
+        String sentTo = sentToET.getText().toString().trim();
         String challan = Objects.requireNonNull(challanET.getText()).toString().trim();
         String date = Objects.requireNonNull(dateET.getText()).toString().trim();
         String amount = Objects.requireNonNull(amountET.getText()).toString().trim();
-        String remarks = Objects.requireNonNull(remarksET.getText()).toString().trim();
+        final String remarks = Objects.requireNonNull(remarksET.getText()).toString().trim();
 
         if (name.isEmpty()) {
             nameET.setError("Field cannot be empty!");
@@ -317,6 +317,26 @@ public class AddMachineFragment extends DialogFragment {
                 Log.d(TAG, result);
                 try {
                     JSONObject jsonObject = new JSONObject(result);
+
+                    if (!jsonObject.getBoolean("error")) {
+                        if (getDialog() != null) {
+                            getDialog().dismiss();
+                        }
+
+                        Fragment organizationFragment = getParentFragmentManager().findFragmentByTag("__Organization");
+                        Fragment machineListFragment = getParentFragmentManager().findFragmentByTag("__MachineList");
+
+                        if (organizationFragment != null && organizationFragment.isVisible()) {
+                            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                            transaction.detach(organizationFragment).attach(organizationFragment).commit();
+                            Log.d(TAG, "Organization fragment refreshed!");
+                        } else if (machineListFragment != null && machineListFragment.isVisible()) {
+                            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                            transaction.detach(machineListFragment).attach(machineListFragment).commit();
+                            Log.d(TAG, "Machine list refreshed!");
+                        }
+                    }
+
                     Toast.makeText(getActivity(), jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
                 } catch (JSONException e) {
                     Log.d(TAG, Objects.requireNonNull(e.getMessage()));

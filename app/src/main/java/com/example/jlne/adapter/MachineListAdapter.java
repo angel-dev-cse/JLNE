@@ -68,11 +68,7 @@ public class MachineListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             ((ViewHolder) holder).machineOwnerTV.setText(machine.getOwner());
             ((ViewHolder) holder).machineChallanTV.setText(String.valueOf(machine.getChallan()));
             ((ViewHolder) holder).transportationDateTV.setText(machine.getDate());
-            if (machine.isRunning_status()) {
-                ((ViewHolder) holder).machineRunningTV.setText(R.string.boolean_true_text);
-            } else {
-                ((ViewHolder) holder).machineRunningTV.setText(R.string.boolean_false_text);
-            }
+            ((ViewHolder) holder).machineRunningTV.setText(machine.getRunning_status());
             ((ViewHolder) holder).machineRentTV.setText(String.valueOf(machine.getAmount()));
 
             ((ViewHolder) holder).viewLL.setOnClickListener(new View.OnClickListener() {

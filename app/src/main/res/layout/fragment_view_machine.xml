@@ -240,6 +240,24 @@
                         style="@style/TextAppearance.MaterialComponents.Subtitle1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/running_status_text" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/status_TV"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status Goes Here"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/sent_from_ET_hint" />
 
                     <View

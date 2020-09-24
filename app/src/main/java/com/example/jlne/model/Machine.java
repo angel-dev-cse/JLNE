@@ -2,11 +2,10 @@ package com.example.jlne.model;
 
 public class Machine {
     private int id, transaction_id, challan, amount;
-    private boolean running_status;
-    private String name, brand, model, serial, owner, sentTo, sentFrom, location, date, transactionType, remarks;
+    private String name, brand, model, serial, owner, running_status, sentTo, sentFrom, date, transactionType, remarks;
     private Boolean expanded, optioned;
 
-    public Machine(int id, String name, String brand, String model, String serial, String owner, String location, boolean running_status, int transaction_id, String sentFrom, String sentTo, String date, String transactionType, int challan, int amount, String remarks) {
+    public Machine(int id, String name, String brand, String model, String serial, String owner, String running_status, int transaction_id, String sentFrom, String sentTo, String date, String transactionType, int challan, int amount, String remarks) {
         this.id = id;
         this.transaction_id = transaction_id;
         this.challan = challan;
@@ -20,7 +19,6 @@ public class Machine {
         this.sentTo = sentTo;
         this.sentFrom = sentFrom;
         this.owner = owner;
-        this.location = location;
         this.date = date;
         this.transactionType = transactionType;
         this.remarks = remarks;
@@ -61,11 +59,11 @@ public class Machine {
         this.amount = amount;
     }
 
-    public boolean isRunning_status() {
+    public String getRunning_status() {
         return running_status;
     }
 
-    public void setRunning_status(boolean running_status) {
+    public void setRunning_status(String running_status) {
         this.running_status = running_status;
     }
 
@@ -115,14 +113,6 @@ public class Machine {
 
     public void setOwner(String owner) {
         this.owner = owner;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 
     public String getDate() {

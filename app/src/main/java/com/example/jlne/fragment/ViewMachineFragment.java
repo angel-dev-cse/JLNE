@@ -20,7 +20,6 @@ import com.example.jlne.R;
 import com.example.jlne.adapter.TransportationAdapter;
 import com.example.jlne.helper.AsyncTaskHelper;
 import com.example.jlne.helper.URLS;
-import com.example.jlne.model.Machine;
 import com.example.jlne.model.Transportation;
 import com.google.android.material.textview.MaterialTextView;
 
@@ -39,9 +38,9 @@ import java.util.Objects;
  */
 public class ViewMachineFragment extends Fragment {
     final String TAG = "__ViewMachine";
-    private MaterialTextView nameTV, brandTV, modelTV, serialTV, ownerTV, challanTV, dateTV, typeTV, sentFromTV, sentToTV, amountTV, remarksTV;
+    private MaterialTextView nameTV, brandTV, modelTV, serialTV, ownerTV, challanTV, dateTV, typeTV, statusTV, sentFromTV, sentToTV, amountTV, remarksTV;
     private RecyclerView transportationRV;
-    private String name, brand, model, serial, owner, date, type, sentFrom, sentTo, remarks;
+    private String name, brand, model, serial, owner, date, type, status, sentFrom, sentTo, remarks;
     private Integer id, transactionID, challan, amount;
 
     public ViewMachineFragment() {
@@ -146,6 +145,7 @@ public class ViewMachineFragment extends Fragment {
             challanTV = getActivity().findViewById(R.id.challan_TV);
             dateTV = getActivity().findViewById(R.id.date_TV);
             typeTV = getActivity().findViewById(R.id.type_TV);
+            statusTV = getActivity().findViewById(R.id.status_TV);
             sentFromTV = getActivity().findViewById(R.id.sent_from_TV);
             sentToTV = getActivity().findViewById(R.id.sent_to_TV);
             amountTV = getActivity().findViewById(R.id.amount_TV);
@@ -175,6 +175,7 @@ public class ViewMachineFragment extends Fragment {
                         challan = machineObject.getInt("challan");
                         date = machineObject.getString("date");
                         type = machineObject.getString("type");
+                        status = machineObject.getString("running_status");
                         sentFrom = machineObject.getString("sent_from");
                         sentTo = machineObject.getString("sent_to");
                         amount = machineObject.getInt("amount");
@@ -189,6 +190,7 @@ public class ViewMachineFragment extends Fragment {
                         challanTV.setText(String.valueOf(challan));
                         dateTV.setText(date);
                         typeTV.setText(type);
+                        statusTV.setText(String.valueOf(status));
                         sentFromTV.setText(sentFrom);
                         sentToTV.setText(sentTo);
                         amountTV.setText(String.valueOf(amount));

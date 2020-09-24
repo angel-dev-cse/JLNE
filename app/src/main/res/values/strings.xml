@@ -117,5 +117,6 @@
     <string name="owner_ET_hint">Owner</string>
     <string name="sent_to_text">Sent To</string>
     <string name="type_hint_text">Type</string>
+    <string name="running_status_text">Running Status</string>
 
 </resources>

@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class OrganizationFragment extends Fragment implements CategoryAdapter.ItemClickListener{
+    final String TAG = "__Organization";
     private RecyclerView organizationRV;
     private MaterialTextView organizationNameTV;
     private String[] data;
