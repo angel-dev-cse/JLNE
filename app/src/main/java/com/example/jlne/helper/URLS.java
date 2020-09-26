@@ -10,6 +10,7 @@ public class URLS {
     public static final String ADD_MACHINE_URL = BASE_URL + "add_machine";
     public static final String UPDATE_MACHINE_URL = BASE_URL + "update_machine";
     public static final String DELETE_MACHINE_URL = BASE_URL + "delete_machine";
+    public static final String TRANSFER_MACHINE_URL = BASE_URL + "transfer_machine";
     public static final String GET_MACHINE_FIELDS_URL = BASE_URL + "get_machine_fields";
     public static final String GET_ORGANIZATION_MACHINE_SUMMARY = BASE_URL + "get_organization_machine_summary";
     public static final String GET_MACHINES = BASE_URL + "get_machines";

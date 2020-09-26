@@ -1,12 +1,6 @@
 package com.example.jlne.fragment;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +11,12 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.jlne.R;
 import com.example.jlne.helper.AsyncTaskHelper;
@@ -26,9 +25,11 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 import com.google.android.material.textfield.TextInputEditText;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
@@ -238,12 +239,20 @@ public class UpdateMachineFragment extends DialogFragment {
         });
 
         // Default value for type from Previous Data
-        if (type.equals("Rent")) {
-            typeRG.check(R.id.rent_radio_button);
-        } else {
-            typeRG.check(R.id.sale_radio_button);
+        switch (type) {
+            case "Rent":
+                typeRG.check(R.id.rent_radio_button);
+                break;
+            case "Sale":
+                typeRG.check(R.id.sale_radio_button);
+                break;
+            case "Return":
+                typeRG.check(R.id.return_radio_button);
+                break;
+            default:
+                typeRG.check(R.id.others_radio_button);
+                break;
         }
-
 
         typeRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -251,11 +260,21 @@ public class UpdateMachineFragment extends DialogFragment {
                 type = ((RadioButton) view.findViewById(checkedId)).getText().toString();
 
                 if (type.equals("Rent")) {
+                    amountET.setText("");
                     amountET.setHint("Rent amount");
-                } else {
+                    amountET.setEnabled(true);
+                    amountET.requestFocus();
+                } else if (type.equals("Sale")) {
+                    amountET.setText("");
                     amountET.setHint("Sale price");
+                    amountET.setEnabled(true);
+                    amountET.requestFocus();
+                } else {
+                    amountET.setText("0");
+                    amountET.setHint("Not required");
+                    amountET.setEnabled(false);
                 }
-                amountET.requestFocus();
+
             }
         });
 
@@ -273,8 +292,8 @@ public class UpdateMachineFragment extends DialogFragment {
         String model = modelET.getText().toString().trim();
         String serial = Objects.requireNonNull(serialET.getText()).toString().trim();
         String owner = ownerET.getText().toString().trim();
-        String sentFrom =  sentFromET.getText().toString().trim();
-        String sentTo =  sentToET.getText().toString().trim();
+        String sentFrom = sentFromET.getText().toString().trim();
+        String sentTo = sentToET.getText().toString().trim();
         String challan = Objects.requireNonNull(challanET.getText()).toString().trim();
         String date = Objects.requireNonNull(dateET.getText()).toString().trim();
         String amount = Objects.requireNonNull(amountET.getText()).toString().trim();

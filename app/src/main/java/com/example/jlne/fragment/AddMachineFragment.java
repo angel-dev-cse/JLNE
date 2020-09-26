@@ -192,11 +192,21 @@ public class AddMachineFragment extends DialogFragment {
                 type = ((RadioButton) view.findViewById(checkedId)).getText().toString();
 
                 if (type.equals("Rent")) {
+                    amountET.setText("");
                     amountET.setHint("Rent amount");
-                } else {
+                    amountET.setEnabled(true);
+                    amountET.requestFocus();
+                } else if (type.equals("Sale")){
+                    amountET.setText("");
                     amountET.setHint("Sale price");
+                    amountET.setEnabled(true);
+                    amountET.requestFocus();
+                } else {
+                    amountET.setText("0");
+                    amountET.setHint("Not required");
+                    amountET.setEnabled(false);
                 }
-                amountET.requestFocus();
+
             }
         });
 
@@ -280,9 +290,11 @@ public class AddMachineFragment extends DialogFragment {
         }
 
         if (amount.isEmpty()) {
-            amountET.setError("Field cannot be empty!");
-            amountET.requestFocus();
-            return;
+            if (type.equals("Rent") || type.equals("Sale")) {
+                amountET.setError("Field cannot be empty!");
+                amountET.requestFocus();
+                return;
+            }
         }
 
         if (remarks.isEmpty()) {

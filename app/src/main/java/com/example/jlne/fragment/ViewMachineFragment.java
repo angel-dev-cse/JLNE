@@ -114,6 +114,11 @@ public class ViewMachineFragment extends Fragment {
                             , owner, sentFrom, sentTo, challan, date, type, amount, remarks);
 
             updateMachineFragment.show(getParentFragmentManager(), "__UpdateMachine");
+        } else if (itemID == R.id.transfer_machine) {
+            TransferFragment transferFragment = TransferFragment.newInstance(
+                    id, name, brand, model, serial, owner, sentTo);
+
+            transferFragment.show(getParentFragmentManager(), "__Transfer");
         } else if (itemID == R.id.delete_machine) {
             DeleteMachineFragment deleteMachineFragment = DeleteMachineFragment.newInstance(
                     id, name, brand, model, serial, challan, date, owner, sentTo);
@@ -165,7 +170,7 @@ public class ViewMachineFragment extends Fragment {
                     JSONObject jsonObject = new JSONObject(result);
 
                     if (!jsonObject.getBoolean("error")) {
-                        JSONObject machineObject  = jsonObject.getJSONObject("machine");
+                        JSONObject machineObject = jsonObject.getJSONObject("machine");
 
                         name = machineObject.getString("name");
                         brand = machineObject.getString("brand");

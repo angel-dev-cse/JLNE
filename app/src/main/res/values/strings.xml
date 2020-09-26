@@ -118,5 +118,8 @@
     <string name="sent_to_text">Sent To</string>
     <string name="type_hint_text">Type</string>
     <string name="running_status_text">Running Status</string>
+    <string name="return_radio_text">Return</string>
+    <string name="others_radio_text">Others</string>
+    <string name="transfer_BT_text">Transfer</string>
 
 </resources>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_grey_300"
+    tools:context=".fragment.TransferFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="98">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="7dp"
+                android:elevation="5dp"
+                android:background="@color/md_white_1000">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Want to transfer this machine?" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:columnCount="3"
+                        android:gravity="center">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_ET_hint" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/name_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_ET_hint" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/brand_ET_hint" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/brand_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/brand_ET_hint" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/model_ET_hint" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/model_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/model_ET_hint" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/serial_ET_hint" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/serial_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/serial_ET_hint" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner_ET_hint" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/owner_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner_ET_hint" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location_text" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/location_TV"
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location_text" />
+
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="7dp"
+                android:elevation="5dp"
+                android:background="@color/md_white_1000">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="96"
+                    android:fillViewport="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/sent_from_ET_hint"
+                            app:startIconDrawable="@drawable/ic_baseline_not_listed_location_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/sent_from_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sent_from_ET_hint"
+                                android:inputType="text"
+                                android:enabled="false"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            app:startIconDrawable="@drawable/ic_baseline_not_listed_location_24">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sent_to_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/sent_to_ET_hint"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/challan_no_ET_hint"
+                            app:startIconDrawable="@drawable/ic_baseline_short_text_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/challan_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/date_input_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/date_ET_hint"
+                            app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/date_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/date_BT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/set_date_BT_text"
+                            app:cornerRadius="50dp"
+                            app:elevation="5dp"
+                            app:icon="@drawable/ic_baseline_date_range_24" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="?attr/textAppearanceHeadline6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/transaction_type_hint" />
+
+                        <RadioGroup
+                            android:id="@+id/type_RG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rent_radio_button"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/rent_radio_text" />
+
+                            <RadioButton
+                                android:id="@+id/sale_radio_button"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/sale_radio_text" />
+
+                            <RadioButton
+                                android:id="@+id/return_radio_button"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/return_radio_text" />
+
+                            <RadioButton
+                                android:id="@+id/others_radio_button"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/others_radio_text" />
+
+                        </RadioGroup>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/amount_ET_hint"
+                            app:startIconDrawable="@drawable/ic_baseline_attach_money_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/amount_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/remarks_ET_hint"
+                            app:startIconDrawable="@drawable/ic_baseline_assignment_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/remarks_ET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:inputType="textMultiLine"
+                                android:minLines="3" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/transfer_BT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/transfer_BT_text"
+                app:cornerRadius="20dp"
+                app:elevation="5dp" />
+
+            <ProgressBar
+                android:id="@+id/transfer_PB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
