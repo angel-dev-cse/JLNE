@@ -45,7 +45,6 @@ public class MachineListFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     public static MachineListFragment newInstance(String organizationName, String type) {
         MachineListFragment machineListFragment = new MachineListFragment();
         Bundle bundle = new Bundle();
